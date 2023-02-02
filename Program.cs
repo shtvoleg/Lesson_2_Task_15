@@ -5,12 +5,12 @@ Console.Clear();				                // очистка консоли
 Console.WriteLine("Введите цифру от 1 до 7 вкл-но, обозначающую день недели: ");		    // ввод числа 
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (num < 1 || num > 7)
-    Console.WriteLine($"Введена недопустимая цифра!");		    // ввод числа 
+if (num < 1 || num > 7)                                 //  проверка на допустимость
+    Console.WriteLine($"Введена недопустимая цифра!");		   
 else
 {
     if (num > 5)
-        Console.WriteLine($"{num}-й день недели - выходной.");		    // ввод числа 
+        Console.WriteLine($"{num}-й день недели - выходной.");		// выходной
     else
-        Console.WriteLine($"{num}-й день недели - рабочий.");		    // ввод числа 
+        Console.WriteLine($"{num}-й день недели - рабочий.");	    // рабочий
 }
